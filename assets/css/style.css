@@ -1,0 +1,124 @@
+:root {
+  --primary-color: #F7F7ED;
+  --secondary-color:#1E3C60;
+  --primary-background-color: #F7F7ED;
+  --sub-background-color:#31343D;
+  --font-background-color:#94CCCD;
+  --font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+  --default-line-height: 1.5;
+  --default-padding: 0.5rem;
+  --default-margin: 0.5rem;
+  --default-border-radius: 10px;
+}
+
+body {
+  background-color: var(--primary-background-color);
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: var(--font-family);
+  display: inline-block;
+}
+
+h1,
+h2 {
+  color: var(--sub-background-color);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: var(--default-line-height);
+  margin-bottom: calc(2*var(--default-margin));
+}
+
+header {
+  display:flex;
+  width: 100%;
+  background-color: var(--sub-background-color);
+  justify-content:space-between;
+}
+
+.header-name {
+  width:100%;
+  background-color: var(--font-background-color);
+  /* padding: var(--padding) var(--padding) var(--padding) calc(3*var(--padding)); */
+  padding: 1rem 1rem 1rem 5rem;
+  margin: calc(2*var(--default-margin)) var(--default-margin);
+  border-radius: var(--default-border-radius);
+}
+
+ul {
+  margin: calc(5*var(--default-margin)) calc(5*var(--default-margin));
+}
+
+li {
+  list-style: none;
+  display: inline;
+  color:var(--font-background-color);
+  border-bottom: 2px solid var(--font-background-color);
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+}
+
+main {
+  display:flex;
+  flex-direction: column;
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+}
+
+figure {
+  position:relative;
+}
+
+img {
+  width: 100%;
+  height: 10rem;
+}
+
+.subtitle {
+  position: absolute;
+  bottom:10px;
+  right:10px;
+  width:20%;
+  background-color: var(--font-background-color);
+  padding: 1rem;
+  margin: var(--default-margin) var(--default-margin);
+  border-radius: var(--default-border-radius);
+}
+
+article {
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+}
+
+p {
+
+}
+
+@media screen and (min-width: 480px) {
+  
+}
+
+@media screen and (min-width: 780px) {
+  
+}
+
+@media screen and (min-width: 1020px) {
+  
+}
