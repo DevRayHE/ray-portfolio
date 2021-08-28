@@ -12,16 +12,16 @@
 </head>
 
 <body>
-  <header>
+  <header class="top-nav-bar">
     <section>
       <h1 class="header-name">Ray</h1>
     </section>
     <nav>
-      <ul>
-        <li><h3>About me</h3></li>
-        <li><h3>Work</h3></li>
-        <li><h3>Contact Me</h3></li>
-        <li><h3>Resume</h3></li>
+      <ul class="top-page-nav">
+        <li class="nav-about-me-btn"><h4><a href="#about-me">About me</a></h4></li>
+        <li class="nav-work-btn"><h4><a href="#work">Work</a></h4></li>
+        <li class="nav-contact-me-btn"><h4><a href="#contact-me">Contact Me</h4></a></li>
+        <li class="nav-resume-btn"><h4><a href="#resume">Resume</h4></a></li>
       </ul>
     </nav>
   </header>
@@ -29,19 +29,15 @@
   <figure>
     <img src=".\assets\image\main-section-background-resized-unsplash.jpg" alt="navigation bar background image">
     <section>
-      <h2 class="subtitle">Subtitle here!</h2>
+      <h3 class="subtitle">Welcome to my portfolio page!</h3>
     </section>
   </figure>
 
   <main>
-    <!-- left bar -->
-    <aside>
-      <section class="about-me"><h1>About</h1> <pre><h1> me</h1></pre></section>
-      <section class="work"><h1>Work</h1></section>
-      <section class="contact-me"><h1>Contact</h1> <pre><h1> me</h1></pre></section>
-    </aside>
-
-    <section class="section-main">
+    <header id="about-me">
+      <nav class="nav-about-me">
+        <h1>About</h1> <pre><h1> me</h1></pre>
+      </nav>
       <article>
         <p>
           Hi! I’m Ray He. I'm a dedicated and trustworthy sales manager with an emphasis on customer satisfaction, 10+ years of highly transferable customer service experience.
@@ -56,39 +52,46 @@
         </p>
   
       </article>
-      <section class="section-work-1">
-        <img src=".\assets\image\background-generator.jpg">
-      </section>
-      <section class="section-work-2">
-        <div>
-          <img src=".\assets\image\wall-unsplash.jpg" alt="project Wall image">
-        </div>
-        <div>
-          <img src=".\assets\image\calculator-unsplash.jpg" alt="project calculator image">
-        </div>
-        <div>
-          <img src=".\assets\image\puzzle-unsplash.jpg" alt="project puzzle image">
-        </div>
-        <div>
-          <img src=".\assets\image\run-buddy-resized-unsplash.jpg" alt="project run buddy image">
-        </div>
-          
-          <!-- 
-          <img src=".\assets\image\wall-unsplash.jpg">
-          <img src=".\assets\image\calculator-unsplash.jpg">
-          <img src=".\assets\image\puzzle-unsplash.jpg">
-          <img src=".\assets\image\run-buddy-resized-unsplash.jpg"> -->
-      </section>
+    </header>
 
-      <footer>
-        <a href="#Email">Email</a>
-        <a href="#Github">Github</a>
-        <a href="#Linkedin">Linkedin</a>
-      </footer>
+    <section id="work">
+      <nav class="nav-work">
+        <h1>Work</h1>
+      </nav>
+      <section class="project-images">
+        <section class="main-project">
+          <img src=".\assets\image\background-generator.jpg">
+        </section>
+        <section class="sub-projects">
+          <div>
+            <img src=".\assets\image\wall-unsplash.jpg" alt="project Wall image">
+          </div>
+          <div>
+            <img src=".\assets\image\calculator-unsplash.jpg" alt="project calculator image">
+          </div>
+          <div>
+            <img src=".\assets\image\puzzle-unsplash.jpg" alt="project puzzle image">
+          </div>
+          <div>
+            <img src=".\assets\image\run-buddy-resized-unsplash.jpg" alt="project run buddy image">
+          </div>
+        </section>
+      </section>
     </section>
-    
+
+    <footer id="contact-me">
+      <header class="nav-contact-me">
+        <h1>Contact</h1> <pre><h1> me</h1></pre>
+      </header>
+      <section class="contact-me-section">
+        <ul class="contact-me-links">
+          <li><h5><a class="email-btn" href="mailto:devrayhe@gmail.com">Email</a></h5></li>
+          <li><h5><a class="github-btn" href="https://github.com/DevRayHE">Github</a></h5></li>
+          <li><h5><a class="linkedin-btn" href="https://www.linkedin.com/in/ray-he-8217711a0">Linkedin</a></h5></li>
+        </ul>
+      </section>
+    </footer>
   </main>
-  
   
 </body>
 </html>
