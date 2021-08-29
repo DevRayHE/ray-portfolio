@@ -1,9 +1,8 @@
+/* Global variables */
 :root {
-  --primary-color: #F7F7ED;
-  --secondary-color:#1E3C60;
-  --primary-background-color: #F7F7ED;
-  --sub-background-color:#31343D;
-  --font-background-color:#94CCCD;
+  --spring-wood: #F7F7ED;
+  --dusk:#465A75;
+  --cyan-opaque:#94CCCD;
   --default-font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --default-line-height: 1.5;
   --default-padding: 0.5rem;
@@ -11,13 +10,8 @@
   --default-border-radius: 10px;
 }
 
-::selection {
-  background-color: var(--secondary-color);
-  color:var(--font-background-color);
-}
-
 body {
-  background-color: var(--primary-background-color);
+  background-color: var(--spring-wood);
 }
 
 h1,
@@ -27,14 +21,9 @@ h4,
 h5,
 p {
   font-family: var(--default-font-family);
-  color: var(--sub-background-color);
+  color: var(--dusk);
   display: inline-block;
   text-align: justify;
-}
-
-h1,
-h2 {
-  color: var(--sub-background-color);
 }
 
 h1 {
@@ -47,64 +36,60 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
+  color: var(--cyan-opaque);
 }
 
 h4 {
-  font-size: 1.4rem;
-}
-
-h5 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: var(--default-line-height);
   margin-bottom: calc(2*var(--default-margin));
 }
 
-.header-name {
+.header-title {
   width:70%;
-  background-color: var(--font-background-color);
-  /* padding: var(--padding) var(--padding) var(--padding) calc(3*var(--padding)); */
-  padding: 2rem 1rem 1rem 5rem;
-  margin: calc(3*var(--default-margin)) var(--default-margin);
+  background-color: var(--cyan-opaque);
+  padding: 0.6rem 1rem 0rem 4rem;
+  /* margin: calc(3*var(--default-margin)) var(--default-margin); */
   border-radius: var(--default-border-radius);
 }
 
-.top-page-nav,
+/* Top right nav section and bottom contact me links section */
+.top-nav-links,
 .contact-me-links {
   display:flex;
   justify-content: space-evenly;
-  margin: 5rem 2rem 0 0;
+  margin: 2.7rem 2rem 0 0;
 }
 
+/* Define list style for both top right nav section and bottom contact me links section */
 li {
   list-style: none;
-  color:var(--font-background-color);
-  border-bottom: 2px solid var(--font-background-color);
+  color:var(--cyan-opaque);
+  /* text-decoration: underline; */
 }
 
 a {
   font-family: var(--default-font-family);
-  color: var(--font-background-color);
-  text-decoration: none;
+  color: var(--cyan-opaque);
+  /* text-decoration: underline; */
 }
 
 main,
 article,
 .nav-about-me,
-.nav-contact-me,
 .nav-work,
-.project-images,
 .nav-contact-me,
-.contact-me-section,
-.avatar {
+.project-images,
+.contact-me-section 
+{
   padding: var(--default-padding);
   margin: var(--default-margin);
 }
 
-/* .main-project img, .sub-projects img  */
 li,
 .main-project,
 .sub-projects { 
@@ -112,6 +97,7 @@ li,
 }
 
 #top-nav-bar {
+  /* Fixed nav bar  to be implemented */
   /* overflow:hidden; */
   /* fixed top nav bar position at top of page */
   /* position:sticky;
@@ -119,60 +105,60 @@ li,
   width:100%;
   display:flex;
   justify-content: space-between;
-  background-color: var(--sub-background-color);
+  background-color: var(--dusk);
 }
 
 .nav-about-me h1,
 .nav-about-me pre,
-.nav-work,
-.nav-contact-me,
 .nav-contact-me h1,
 .nav-contact-me pre {
   align-self: flex-end;
 }
 
+/* Defines the vertical section line */
 .nav-about-me,
 .nav-work,
 .nav-contact-me {
   border-right: solid;
   border-width: 5px;
-  border-color: var(--font-background-color);
-}
-
-.top-nav-btn {
-  max-width:40%;
+  border-color: var(--cyan-opaque);
 }
 
 .name-avatar {
   display:flex;
-  max-width:90%;
   flex-direction: row;
 }
 
 .avatar img {
-  max-width:100%;
   object-fit: cover;
+  height:12vh;
+  margin-left:0.8rem;
 }
 
-figure {
+/* Relative position to display subtitle on top of nav image */
+.top-nav-image {
   position:relative;
 }
 
-  figure > img {
+  .top-nav-image img {
     width: 100%;
-    height: 15vh;
+    height: 20vh;
   }
 
+/* Turns main section to flexbox, column flex direction for "About me", "Work" and "Contact me" sections */
 main {
   display:flex;
   flex-direction: column;
 }
 
+/* Used id here for top right nav link.
+    Defines about me section to be a flexbox, row flex direction for nav bar and article section, will turns to column flex direction when display pixel width is smaller than 480px only. */
 #about-me {
-  flex:2;
   display:flex;
   flex-direction: row;
 }
+
+    /* left nav bar vs article with flex portion of 2:5 */
     .nav-about-me {
       flex:2;
       display:flex;
@@ -184,7 +170,6 @@ main {
     }
 
 #work {
-  flex:5;
   display:flex;
   flex-direction:row;
 }
@@ -192,7 +177,6 @@ main {
   .nav-work {
     flex:2;
     text-align: right;
-    height:167vh;
   }
 
   .project-images {
@@ -202,20 +186,19 @@ main {
   }
 
     .main-project {
-      flex:1;
       display:flex;
-      flex:1 0 auto;
       margin:0.2rem;
     }
+
 
       .main-project img {
         width: 100%;
         height: 100%;
+        /* Image covers 100% of container */
         object-fit: cover;
       }
     
     .sub-projects {
-      flex:1;
       display:flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -223,6 +206,7 @@ main {
       
       .sub-projects div {
         display:flex;
+        /* Sub Projects image displays properly 2 in a row  */
         flex:1 0 45%;
         margin: 0.2rem;
       }
@@ -233,14 +217,16 @@ main {
         object-fit: cover;
       } 
 
+    /* Gives all project image a border and 50% transparency */
     .main-project img,
     .sub-projects img {
       border-style: solid;
       border-width: auto;
-      border-color: var(--font-background-color);
+      border-color: var(--title-background-color);
       opacity: 0.5;
     }
 
+    /* When mouse over, image will turn to 100% visible and apply box shadow with 0.5s transition time */
     .main-project img:hover,
     .sub-projects img:hover {
       opacity: 1;
@@ -248,6 +234,7 @@ main {
       transition: all 0.5s ease-in-out;
     }
 
+    /* On mouse click, "click effect" - image shrink to 95% with 0.5s transition time */
     .main-project img:active,
     .sub-projects img:active {
       width:95%;
@@ -257,11 +244,11 @@ main {
   
 
 #contact-me {
-  flex:1;
   display:flex;
   flex-direction: row;
 }
 
+  /* Left nav bar vs contact me section with links is 2:5 */
   .nav-contact-me {
     flex:2;
     display: flex;
@@ -283,25 +270,16 @@ main {
   right:2rem;
   max-width:98%;
   max-height: 3rem;
-  background-color: var(--font-background-color);
+  background-color: var(--dusk);
   padding: var(--default-padding);
   margin: var(--default-margin) var(--default-margin);
   border-radius: var(--default-border-radius);
 }
 
 @media screen and (max-width: 1020px) {
-  #top-nav-bar {
-    flex-direction: row;
-  }
-}
 
+/* Responsive layout style changes when screen size is below 780px */
 @media screen and (max-width: 780px) {
-
-  /* :root {
-    --default-padding: 0.3rem;
-    --default-padding: 0.3rem;
-  } */
-
   #top-nav-bar {
     flex-direction: column;
   }
@@ -311,70 +289,50 @@ main {
     align-self: center;
   }
 
+  /* Work section header will change from left of section to top of section, bottom border as separation line */
   .nav-work {
     align-self: center;
-  }
-
-  .nav-work {
     border-right-style: none;
     border-bottom: solid;
     border-width: 5px;
-    border-bottom-color: var(--font-background-color);
+    border-bottom-color: var(--cyan-opaque);
   }
 
-  .sub-projects {
-    flex-direction: column;
-  }
-
-  .sub-projects >a >img {
-    width:100%;
-    height: 10vh;
-  }
-
-  .main-project >a > img {
-    width:100%;
-    height: 45vh;
-  }
-
-  .top-page-nav {
+  .top-nav-links {
     margin: auto;
   }
 
-  .header-name {
+   .header-title {
     padding: 1rem 1rem 1rem 3rem;
     width: auto;
   }
 
+  /*
   .avatar img {
     max-width:100%;
     object-fit: cover;
-  }
+  } */
 }
 
+/* Responsive layout style changes when screen size is below 480px */
 @media screen and (max-width: 480px) {
-  /* :root {
-    --default-padding: 0.1rem;
-    --default-padding: 0.1rem;
-  } */
-
-  .top-page-nav {
+  /* Top right nav links section change from row to column style due to screen size */
+  .top-nav-links {
     flex-direction: column;
   }
 
-  .top-page-nav {
-    margin: auto;
-  }
-
-  .header-name {
+  .header-title {
     width: auto;
   }
 
+  /* Both about me and cotact me main sections change to column style flexbox due to screen size */
   #about-me,
   #contact-me {
     flex-direction: column;
     align-self: center;
   }
 
+  /* Both about me and contact me section header display in one line only */
   .nav-about-me,
   .nav-contact-me {
     flex-direction: row;
@@ -382,34 +340,50 @@ main {
   }
 
   .nav-about-me,
-  .nav-work,
   .nav-contact-me {
     border-right: none ;
     border-bottom: solid;
     border-width: 5px;
-    border-color: var(--font-background-color);
+    border-color: var(--cyan-opaque);
   }
 
-  .sub-projects {
-    flex-direction: column;
-  }
-  
   .subtitle {
     font-size: 1.5rem;
     max-height: 4rem;
   }
 
-  .contact-me-links {
-    margin: auto; 
+  /* Sub project image to display in column  */
+  .sub-projects {
+    flex-direction: column;
+  }
+  
+  .sub-projects div {
+    justify-content: center;
   }
 
-  .sub-projects > a > img {
+  /* Keeps sub projects image in a smaller size than main project */
+  .sub-projects img {
     width:100%;
-    height: 25vh;
+    height: 15vh;
   }
 
-  .main-project > a >img {
-    height: 30vh;
+  .main-project img {
+    height:20vh;
+  }
+
+}
+
+/* Responsive layout style changes when screen size is below 780px */
+@media screen and (max-width: 315px) {
+  /* Keep the main project image larger in size than sub project image */
+  .main-project img {
+    width:100%;
+    height:auto;
+  }
+
+  .sub-projects img {
+    width:100%;
+    height: 10vh;
   }
 
 }
