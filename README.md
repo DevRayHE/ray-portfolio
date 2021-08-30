@@ -1,4 +1,4 @@
-# Project title
+# 🏗️ Project title
 
  
  ## Ray He's portfolio website
@@ -6,24 +6,42 @@
 
 <br/>
 
-# Description
-### 
+# 📖 Description
+### This is my portfolio website built with Html and CSS. There's a short intro about me, image gallery of the projects I have built recently, links to those projects, as well as different channels to stay in touch with me.
 
 <br/>
 
-## A list of what has been done.
+## 🏆 A list of features
 
-- a
+- Semantic HTML and CSS structures.
+
+- Fully responsive to different screen sizes.
+
+- Top navigation link to different sections of the website.
+
+- Mouse hover and mouse click effect on image gallery.
+
 
 <br/>
 
-# Screenshot
+# 🏗️ Screenshot
 
-The following image shows the web application's appearance and functionality:
+## The following image shows the web application's appearance and functionality:
+<br/>
 
-![The webpage includes a navigation bar, a header image, and cards with text and images at the bottom of the page.]( "site image")
+### Website on desktop, screen size over 780 pixel width.
+![Website on desktop, screen size over 780 pixel width.](./assets/image/desktop-beta-version.gif "Desktop version video")
+<br/>
 
-# Installation
+### Website on tablet, screen size between 480 pixel to 780 pixel width.
+![Website on tablet, screen size between 480 pixel to 780 pixel width.](./assets/image/tablet-beta-version.gif "Tablet version video")
+<br/>
+
+### Website on desktop, screen size below 480 pixel width
+![Website on desktop, screen size below 480 pixel width]("Mobile version video")
+
+
+# 📝 Installation
 
 The link to the deployed site:
 

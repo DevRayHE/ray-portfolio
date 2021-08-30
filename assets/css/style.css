@@ -371,6 +371,9 @@ main {
     height:20vh;
   }
 
+  .contact-me-links {
+    margin: 0;
+  }
 }
 
 /* Responsive layout style changes when screen size is below 780px */
