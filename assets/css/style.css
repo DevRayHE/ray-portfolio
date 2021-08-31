@@ -43,8 +43,12 @@ h4 {
   font-size: 1.5rem;
 }
 
+h5 {
+  font-size: 1.3rem;
+}
+
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: var(--default-line-height);
   margin-bottom: calc(2*var(--default-margin));
 }
@@ -188,6 +192,7 @@ main {
     .main-project {
       display:flex;
       margin:0.2rem;
+      position:relative;
     }
 
 
@@ -196,6 +201,20 @@ main {
         height: 100%;
         /* Image covers 100% of container */
         object-fit: cover;
+      }
+      
+      /* Position the project description properly */
+      .project-description {
+        position:absolute;
+        align-self:flex-end;
+        margin-bottom: 2rem;
+        padding:0.5rem 0.5rem 0rem 0.5rem;
+        line-height: 1.3;
+        width:auto;
+        max-height: 9.5vh;
+        background-color: var(--cyan-opaque);
+        color: var(--dusk);
+        transition: all 0.5s ease-in-out;
       }
     
     .sub-projects {
@@ -237,8 +256,8 @@ main {
     /* On mouse click, "click effect" - image shrink to 95% with 0.5s transition time */
     .main-project img:active,
     .sub-projects img:active {
-      width:95%;
-      height:95%;
+      width:97%;
+      height:97%;
       transition: all 0.5s ease-in-out;
     }
   
@@ -280,6 +299,16 @@ main {
 
 /* Responsive layout style changes when screen size is below 780px */
 @media screen and (max-width: 780px) {
+  /* Reduce font size to fit smaller tablet screen */
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  h5 {
+    font-size: 1.2rem;
+  }
+
+
   #top-nav-bar {
     flex-direction: column;
   }
@@ -302,9 +331,16 @@ main {
     margin: auto;
   }
 
-   .header-title {
+  .header-title {
     padding: 1rem 1rem 1rem 3rem;
     width: auto;
+  }
+
+  .project-description {
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.1rem;
+    max-height:8.5vh;
+    line-height: 1.2;
   }
 
   /*
@@ -316,6 +352,12 @@ main {
 
 /* Responsive layout style changes when screen size is below 480px */
 @media screen and (max-width: 480px) {
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+
   /* Top right nav links section change from row to column style due to screen size */
   .top-nav-links {
     flex-direction: column;
@@ -369,6 +411,26 @@ main {
 
   .main-project img {
     height:20vh;
+  }
+
+  /* Column flex box display to fit small screen */
+  .main-project,
+  .sub-projects div {
+    flex-direction: column;
+  }
+
+  /* Flex order 1 to move project description on top of project image */
+  .project-description {
+    order:1;
+    position: relative;
+    margin-bottom: 0.2rem;
+    padding-bottom: 0.1rem;
+    max-height:7.5vh;
+    line-height: 1;
+  }
+
+  a {
+    order:2;
   }
 
   .contact-me-links {
