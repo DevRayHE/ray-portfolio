@@ -56,8 +56,8 @@ p {
 .header-title {
   width:70%;
   background-color: var(--cyan-opaque);
-  padding: 0.6rem 1rem 0rem 4rem;
-  /* margin: calc(3*var(--default-margin)) var(--default-margin); */
+  padding: 0.6rem 1rem 0.5rem 4rem;
+  margin: 0.5rem 0.1rem 0.1rem 0.5rem; 
   border-radius: var(--default-border-radius);
 }
 
@@ -173,6 +173,10 @@ main {
       flex:5;
     }
 
+#work img {
+  border-radius: var(--default-border-radius);
+}
+
 #work {
   display:flex;
   flex-direction:row;
@@ -212,6 +216,7 @@ main {
         line-height: 1.3;
         width:auto;
         max-height: 9.5vh;
+        border-radius: var(--default-border-radius);
         background-color: var(--cyan-opaque);
         color: var(--dusk);
         transition: all 0.5s ease-in-out;
