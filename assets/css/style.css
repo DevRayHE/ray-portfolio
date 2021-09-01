@@ -10,8 +10,31 @@
   --default-border-radius: 10px;
 }
 
+ html {
+  height:100%;
+  background-repeat: no-repeat;
+} 
+
 body {
-  background-color: var(--spring-wood);
+  width: 100%;
+  /* background-color: var(--spring-wood); */
+}
+
+.linear-gradient-background-body {
+  background-image: linear-gradient(
+    #94CCCD 0%,
+    #F7F7ED 100%
+  );
+  background-attachment: fixed;
+}
+
+.linear-gradient-background-header {
+  background-image: linear-gradient(
+    to right,
+    #C6489A 0%,
+    #008CBB 100% 
+  );
+  background-attachment: fixed;
 }
 
 h1,
@@ -162,16 +185,16 @@ main {
   flex-direction: row;
 }
 
-    /* left nav bar vs article with flex portion of 2:5 */
-    .nav-about-me {
-      flex:2;
-      display:flex;
-      flex-direction:column;
-    }
+/* left nav bar vs article with flex portion of 2:5 */
+.nav-about-me {
+  flex:2;
+  display:flex;
+  flex-direction:column;
+}
 
-    article {
-      flex:5;
-    }
+article {
+  flex:5;
+}
 
 #work img {
   border-radius: var(--default-border-radius);
@@ -182,111 +205,125 @@ main {
   flex-direction:row;
 }
 
-  .nav-work {
-    flex:2;
-    text-align: right;
-  }
+.nav-work {
+  flex:2;
+  text-align: right;
+}
 
-  .project-images {
-    flex:5;
-    display: flex;
-    flex-direction: column;
-  }
+.project-images {
+  flex:5;
+  display: flex;
+  flex-direction: column;
+}
 
-    .main-project {
-      display:flex;
-      margin:0.2rem;
-      position:relative;
-    }
+.main-project {
+  display:flex;
+  margin:0.2rem;
+  position:relative;
+}
 
 
-      .main-project img {
-        width: 100%;
-        height: 100%;
-        /* Image covers 100% of container */
-        object-fit: cover;
-      }
+.main-project img {
+  width: 100%;
+  height: 100%;
+  /* Image covers 100% of container */
+  object-fit: cover;
+}
+
+/* Position the project description properly */
+.project-description {
+  position:absolute;
+  align-self:flex-end;
+  margin-bottom: 2rem;
+  padding:0.5rem 0.5rem 0rem 0.5rem;
+  line-height: 1.3;
+  width:auto;
+  max-height: 9.5vh;
+  border-radius: var(--default-border-radius);
+  background-color: var(--cyan-opaque);
+  color: var(--dusk);
+  opacity: 0.7;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-description:hover{
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.sub-projects {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
       
-      /* Position the project description properly */
-      .project-description {
-        position:absolute;
-        align-self:flex-end;
-        margin-bottom: 2rem;
-        padding:0.5rem 0.5rem 0rem 0.5rem;
-        line-height: 1.3;
-        width:auto;
-        max-height: 9.5vh;
-        border-radius: var(--default-border-radius);
-        background-color: var(--cyan-opaque);
-        color: var(--dusk);
-        transition: all 0.5s ease-in-out;
-      }
-    
-    .sub-projects {
-      display:flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-      
-      .sub-projects div {
-        display:flex;
-        /* Sub Projects image displays properly 2 in a row  */
-        flex:1 0 45%;
-        margin: 0.2rem;
-      }
-      
-      .sub-projects img {
-        width:100%;
-        height:auto;
-        object-fit: cover;
-      } 
+.sub-projects div {
+  display:flex;
+  /* Sub Projects image displays properly 2 in a row  */
+  flex:1 0 45%;
+  margin: 0.2rem;
+}
 
-    /* Gives all project image a border and 50% transparency */
-    .main-project img,
-    .sub-projects img {
-      border-style: solid;
-      border-width: auto;
-      border-color: var(--title-background-color);
-      opacity: 0.5;
-    }
+.sub-projects img {
+  width:100%;
+  height:auto;
+  object-fit: cover;
+} 
 
-    /* When mouse over, image will turn to 100% visible and apply box shadow with 0.5s transition time */
-    .main-project img:hover,
-    .sub-projects img:hover {
-      opacity: 1;
-      box-shadow: rgb(78, 77, 77) 5px 5px 5px;
-      transition: all 0.5s ease-in-out;
-    }
+/* Gives all project image a border and 50% transparency */
+.main-project img,
+.sub-projects img {
+  border-style: solid;
+  border-width: auto;
+  border-color: var(--title-background-color);
+  opacity: 0.6;
+}
 
-    /* On mouse click, "click effect" - image shrink to 95% with 0.5s transition time */
-    .main-project img:active,
-    .sub-projects img:active {
-      width:97%;
-      height:97%;
-      transition: all 0.5s ease-in-out;
-    }
-  
+/* When mouse over, image will turn to 100% visible and apply box shadow with 0.5s transition time */
+.main-project img:hover,
+.sub-projects img:hover {
+  opacity: 1;
+  box-shadow: rgb(78, 77, 77) 5px 5px 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* On mouse click, "click effect" - image shrink to 95% with 0.5s transition time */
+.main-project img:active,
+.sub-projects img:active {
+  width:97%;
+  height:97%;
+  transition: all 0.8s ease-in-out;
+}
+
+.top-nav-btn a:hover,
+.contact-me-links a:hover {
+  /* box-shadow: inset 0px 0px 8px var(--cyan-opaque), 0 0 15px var(--cyan-opaque); */
+  font-size: 1.6rem;
+  text-shadow: 0px 0px 8px #C6489A, 0 0 15px #C6489A;
+  transition: all 0.3s ease-in-out;
+}
+
 
 #contact-me {
   display:flex;
   flex-direction: row;
 }
 
-  /* Left nav bar vs contact me section with links is 2:5 */
-  .nav-contact-me {
-    flex:2;
-    display: flex;
-    flex-direction: column;
-  }
+/* Left nav bar vs contact me section with links is 2:5 */
+.nav-contact-me {
+  flex:2;
+  display: flex;
+  flex-direction: column;
+}
 
-  /* .nav-contact-me[back-btn]:hover::before,
-  .nav-contact-me[back-btn]:focus::before {
-    content: attr(back-btn);
-  } */
+/* .nav-contact-me[back-btn]:hover::before,
+.nav-contact-me[back-btn]:focus::before {
+  content: attr(back-btn);
+} */
 
-  .contact-me-section {
-    flex:5;
-  }
+.contact-me-section {
+  flex:5;
+}
 
 .subtitle {
   position: absolute;
@@ -361,7 +398,6 @@ main {
   h4 {
     font-size: 1.3rem;
   }
-
 
   /* Top right nav links section change from row to column style due to screen size */
   .top-nav-links {
@@ -455,5 +491,4 @@ main {
     width:100%;
     height: 10vh;
   }
-
 }
