@@ -78,10 +78,8 @@ p {
 }
 
 .header-title {
-  /* width:70%; */
-  /* background-color: var(--cyan-opaque); */
   padding: 0.6rem 1rem 0.5rem 4rem;
-  margin: 0.5rem 0.1rem 3% 0.5rem; 
+  margin: 0.5rem 0.1rem 3% 0.5rem;  
   border-radius: var(--default-border-radius);
 }
 
@@ -97,7 +95,6 @@ p {
 li {
   list-style: none;
   color:var(--cyan-opaque);
-  /* text-decoration: underline; */
 }
 
 a {
@@ -105,18 +102,20 @@ a {
   color: var(--cyan-opaque);
 }
 
+/* Apply default padding and margin to these elements */
 main,
 article,
 .nav-about-me,
 .nav-work,
 .nav-contact-me,
-.project-images,
+.projects,
 .contact-me-section 
 {
   padding: var(--default-padding);
   margin: var(--default-margin);
 }
 
+/* Apply default margin to these elements */
 li,
 .main-project,
 .sub-projects { 
@@ -129,28 +128,21 @@ li,
   align-items: center;
 }
 
+/* Left name & avater and right nav links will take 25%, subtitle in middle will take 50% of screen width */
 .name-avatar,
-.top-nav-links {
-  flex:1;
+.top-nav-links-wrapper {
+  flex: 1;
 }
 
 .subtitle {
-  flex:2;
+  flex: 2;
   padding:1rem;
   margin:1rem;
 }
 
 #top-nav-bar {
-  /* Fixed nav bar  to be implemented */
-  /* overflow:hidden; */
-  /* fixed top nav bar position at top of page */
-  /* position:sticky;
-  top:0; */
   width:100%;
-  /* display:flex;
-  flex-direction: row; */
   justify-content: space-between;
-  /* align-items: center; */
   background-color: var(--dusk);
 }
 
@@ -206,13 +198,13 @@ main {
 
 /* left nav bar vs article with flex portion of 2:5 */
 .nav-about-me {
-  flex:2;
+  flex:1;
   display:flex;
   flex-direction:column;
 }
 
 article {
-  flex:5;
+  flex:3;
 }
 
 #work img {
@@ -225,12 +217,12 @@ article {
 }
 
 .nav-work {
-  flex:2;
+  flex:1;
   text-align: right;
 }
 
-.project-images {
-  flex:5;
+.projects {
+  flex:3;
   display: flex;
   flex-direction: column;
 }
@@ -239,6 +231,7 @@ article {
   display:flex;
   margin:0.2rem;
   position:relative;
+  /* transition: all 1s, ease-in-out; */
 }
 
 
@@ -257,7 +250,7 @@ article {
   padding:0.5rem 0.5rem 0rem 0.5rem;
   line-height: 1.3;
   width:auto;
-  max-height: 9.5vh;
+  max-height: 8.5vh;
   border-radius: var(--default-border-radius);
   background-color: var(--cyan-opaque);
   color: var(--dusk);
@@ -295,7 +288,7 @@ article {
   border-style: solid;
   border-width: auto;
   border-color: var(--title-background-color);
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 /* When mouse over, image will turn to 100% visible and apply box shadow with 0.5s transition time */
@@ -314,49 +307,34 @@ article {
   transition: all 0.8s ease-in-out;
 }
 
+/* Mouse hover effect for top navigation button and bottom contact me links */
 .top-nav-btn a:hover,
 .contact-me-links a:hover {
-  /* box-shadow: inset 0px 0px 8px var(--cyan-opaque), 0 0 15px var(--cyan-opaque); */
   font-size: 1.6rem;
   text-shadow: 0px 0px 8px #C6489A, 0 0 15px #C6489A;
   transition: all 0.3s ease-in-out;
 }
-
 
 #contact-me {
   display:flex;
   flex-direction: row;
 }
 
-/* Left nav bar vs contact me section with links is 2:5 */
+/* Left nav bar vs contact me section with links is 1:3 */
 .nav-contact-me {
-  flex:2;
+  flex:1;
   display: flex;
   flex-direction: column;
 }
 
-/* .nav-contact-me[back-btn]:hover::before,
-.nav-contact-me[back-btn]:focus::before {
-  content: attr(back-btn);
-} */
-
 .contact-me-section {
-  flex:5;
+  flex:3;
 }
 
-.subtitle {
-  /* position: absolute; */
-  /* bottom:10px; */
-  /* right:2rem; */
-  /* max-width:98%; */
-  /* max-height: 1rem; */
-  /* background-color: var(--dusk); */
-  /* padding: var(--default-padding); */
-  /* margin: var(--default-margin) var(--default-margin); */
-  /* border-radius: var(--default-border-radius); */
-}
 
 @media screen and (max-width: 1020px) {
+
+}
 
 /* Responsive layout style changes when screen size is below 780px */
 @media screen and (max-width: 780px) {
@@ -407,11 +385,6 @@ article {
     line-height: 1.2;
   }
 
-  /*
-  .avatar img {
-    max-width:100%;
-    object-fit: cover;
-  } */
 }
 
 /* Responsive layout style changes when screen size is below 480px */
@@ -421,16 +394,11 @@ article {
     font-size: 1.3rem;
   }
 
-  /* Top right nav links section change from row to column style due to screen size */
-  /* .top-nav-links {
-    /* flex-direction: column; */
-  } */
-
   .header-title {
     width: auto;
   }
 
-  /* Both about me and cotact me main sections change to column style flexbox due to screen size */
+  /* Both about me and contact me main sections change to column style flexbox due to screen size */
   #about-me,
   #contact-me {
     flex-direction: column;
@@ -442,10 +410,7 @@ article {
   .nav-contact-me {
     flex-direction: row;
     align-self: center;
-  }
-
-  .nav-about-me,
-  .nav-contact-me {
+    /* Disable right border, display bottom border as separation line */
     border-right: none ;
     border-bottom: solid;
     border-width: 5px;
@@ -458,7 +423,9 @@ article {
   }
 
   /* Sub project image to display in column  */
-  .sub-projects {
+  .main-project,
+  .sub-projects,
+  .sub-projects div {
     flex-direction: column;
   }
   
@@ -476,12 +443,6 @@ article {
     height:20vh;
   }
 
-  /* Column flex box display to fit small screen */
-  .main-project,
-  .sub-projects div {
-    flex-direction: column;
-  }
-
   /* Flex order 1 to move project description on top of project image */
   .project-description {
     order:1;
@@ -496,6 +457,7 @@ article {
     order:2;
   }
 
+  /* Removes margin for the bottom contact me links  */
   .contact-me-links {
     margin: 0;
   }

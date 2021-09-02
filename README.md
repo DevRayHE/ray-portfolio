@@ -30,15 +30,15 @@
 <br/>
 
 ### Website on desktop, screen size over 780 pixel width.
-![Website on desktop, screen size over 780 pixel width.](./assets/image/desktop-beta-version.gif "Desktop version video")
+![Website on desktop, screen size over 780 pixel width.](./assets/image/desktop-view.gif "Desktop version video")
 <br/>
 
 ### Website on tablet, screen size between 480 pixel to 780 pixel width.
-![Website on tablet, screen size between 480 pixel to 780 pixel width.](./assets/image/tablet-beta-version.gif "Tablet version video")
+![Website on tablet, screen size between 480 pixel to 780 pixel width.](./assets/image/tablet-view.gif "Tablet version video")
 <br/>
 
 ### Website on desktop, screen size below 480 pixel width
-![Website on desktop, screen size below 480 pixel width]("Mobile version video")
+![Website on desktop, screen size below 480 pixel width](./assets/image/mobile-view.gif "Mobile version video")
 
 
 # 📝 Installation
