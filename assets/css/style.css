@@ -4,7 +4,6 @@
   --dusk:#465A75;
   --cyan-opaque:#94CCCD;
   --default-font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --default-line-height: 1.5;
   --default-padding: 0.5rem;
   --default-margin: 0.5rem;
   --default-border-radius: 10px;
@@ -73,7 +72,7 @@ h5 {
 
 p {
   font-size: 1.1rem;
-  line-height: var(--default-line-height);
+  line-height: 1.5;
   margin-bottom: calc(2*var(--default-margin));
 }
 
@@ -302,14 +301,14 @@ article {
 /* On mouse click, "click effect" - image shrink to 95% with 0.5s transition time */
 .main-project img:active,
 .sub-projects img:active {
-  width:97%;
-  height:97%;
+  width:99%;
   transition: all 0.8s ease-in-out;
 }
 
 /* Mouse hover effect for top navigation button and bottom contact me links */
 .top-nav-btn a:hover,
-.contact-me-links a:hover {
+.contact-me-links a:hover,
+.project-description:hover {
   font-size: 1.6rem;
   text-shadow: 0px 0px 8px #C6489A, 0 0 15px #C6489A;
   transition: all 0.3s ease-in-out;
@@ -378,6 +377,7 @@ article {
     width: auto;
   }
 
+  /* Adjust project description for tablet screen */
   .project-description {
     margin-bottom: 1.2rem;
     padding-bottom: 0.1rem;
