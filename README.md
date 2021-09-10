@@ -37,7 +37,7 @@
 ![Website on tablet, screen size between 480 pixel to 780 pixel width.](./assets/image/tablet-view.gif "Tablet version video")
 <br/>
 
-### Website with a mobile view, screen size below 480 pixel width
+### Website with a mobile view, screen size below 480 pixel width.
 ![Website on desktop, screen size below 480 pixel width](./assets/image/mobile-view.gif "Mobile version video")
 
 
