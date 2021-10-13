@@ -19,9 +19,9 @@
   <title>Ray's Portfolio</title>
 </head>
 
-<body class="linear-gradient-background-body"  data-bs-spy="scroll" data-bs-target="#top-nav-btns" data-bs-offset="0" tabindex="0">
-  <header id="top-nav-bar" class="linear-gradient-background-header sticky-top">
-    <!-- <div class="top-nav-bar-wrapper">
+<body class="linear-gradient-background-body">
+  <header id="top-nav-bar" class="linear-gradient-background-header">
+    <div class="top-nav-bar-wrapper">
       <section class="name-avatar">
         <h1 class="header-title">Ray He</h1>
         <figure class="avatar">
@@ -29,27 +29,14 @@
         </figure>
       </section>
       <h2 class="subtitle">Welcome to my portfolio page!</h2>
-    </div> -->
-    <nav id="top-nav-btns" class="navbar">
-      <div class="container">
-        <ul class="top-nav-links nav nav-pills">
-          <li class="nav-item"><h4><a class="nav-link" href="#about-me">About me</a></h4></li>
-          <li class="nav-item dropdown">
-            <a href="#portfolio" class="nav-link btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> 
-              Portfolio
-            </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#project1">Password Generator</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#project2">Robo Friends</a></li>
-                <li><a class="dropdown-item" href="#project3">Background Generator</a></li>
-              </ul>
-          </li>
-          <!-- <li class="top-nav-btn"><h4><a href="#work">Work</a></h4></li> -->
-          <li class="nav-item"><h4><a class="nav-link" href="#contact-me">Contact Me</h4></a></li>
+      <nav top-nav-links-wrapper>
+        <ul class="top-nav-links">
+          <li class="top-nav-btn"><h4><a href="#about-me">About me</a></h4></li>
+          <li class="top-nav-btn"><h4><a href="#work">Work</a></h4></li>
+          <li class="top-nav-btn"><h4><a href="#contact-me">Contact Me</h4></a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -73,17 +60,17 @@
     </header>
 
     <!-- Middle work section, contains 1 main project and 4 sub projects, as well as project descriptions -->
-    <section id="portfolio">
+    <section id="work">
       <nav class="nav-work">
         <h1>Work</h1>
       </nav>
       <section class="projects">
-        <section class="main-project" id="project1">
+        <section class="main-project">
           <a href="https://devrayhe.github.io/password-generator/" alt="hyperlink to password generator website"><img src=".\assets\image\password-generator.jpg" alt="image of password generator project website page"></a>
           <a class="project-description" href="https://devrayhe.github.io/password-generator/"><h4>Password Generator<br/><p>Javascript/CSS/HTML</p></h4></a>
         </section>
         <section class="sub-projects">
-          <div id="project2">
+          <div>
             <a href="https://devrayhe.github.io/horiseon_website_code_refactor/" alt="hyperlink to horiseon project website">
               <img src=".\assets\image\horiseon.jpg" alt="project horiseon website image">
             </a>
@@ -103,7 +90,7 @@
               </h4>
             </a alt="hyperlink to robofriends project website">
           </div>
-          <div id="project3">
+          <div>
             <a href="https://devrayhe.github.io/background-generator/" alt="hyperlink to background generator project website">
               <img src=".\assets\image\background-generator-16-9.jpg" alt="image of background generator project main page">
             </a>
