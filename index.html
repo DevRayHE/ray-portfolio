@@ -15,12 +15,12 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   <!-- Added fav icon -->
-  <link rel="shortcut icon" type="image/jpg" href="assets/image/avocado.png">
+  <link rel="shortcut icon" type="image/jpg" href="assets/image/avatar-bgremoved.png">
   <title>Ray's Portfolio</title>
 </head>
 
 <body id="home" class="linear-gradient-background-body"  data-bs-spy="scroll" data-bs-target="#top-nav-btns" data-bs-offset="0" tabindex="0">
-  <header id="top-nav-bar" class="linear-gradient-background-header sticky-top">
+  <header id="top-nav-bar" class="linear-gradient-background-header sticky-top p-0">
     <!-- <div class="top-nav-bar-wrapper">
       <section class="name-avatar">
         <h1 class="header-title">Ray He</h1>
@@ -30,81 +30,30 @@
       </section>
       <h2 class="subtitle">Welcome to my portfolio page!</h2>
     </div> -->
-    <!-- <nav class="navbar navabar-expand-lg">
-      <div class="container-fliud">
-        <button class="navbar-toggler" 
-              type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#navbarCollapseToggler" 
-              aria-controls="navbarCollapseToggler" 
-              aria-expanded="false" 
-              aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button> -->
-      <!-- <div class="collapse navbar-collapse" id="navbarCollapseToggler">
-        <nav id="top-nav-btns" class="navbar">
-          <div class="container">
-            <ul class="top-nav-links nav nav-pills">
-              <li class="nav-item"><h4><a class="nav-link" href="#about-me">About me</a></h4></li>
-              <li class="nav-item dropdown">
-                <a href="#portfolio" class="nav-link btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> 
-                  Portfolio
-                </a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#project1">Password Generator</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#project2">Robo Friends</a></li>
-                    <li><a class="dropdown-item" href="#project3">Background Generator</a></li>
-                  </ul>
-              </li>
-              <li class="nav-item"><h4><a class="nav-link" href="#contact-me">Contact Me</h4></a></li>
-            </ul>
-          </div>
-        </nav>
-      </div> -->
-      <!-- </div>   
-    </nav> -->
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-dark  bg-dark">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapseToggler" aria-controls="navbarCollapseToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        </div> -->
         <div class="collapse navbar-collapse" id="navbarCollapseToggler">
           <nav id="top-nav-btns" class="navbar">
             <div class="container">
-              <ul class="top-nav-links nav nav-pills">
-                <li class="nav-item"><h4><a class="nav-link" href="#home">Home</a></h4></li>
-                <li class="nav-item"><h4><a class="nav-link" href="#about-me">About me</a></h4></li>
-                <li class="nav-item dropdown">
+              <ul class="nav nav-pills flex-column flex-sm-row">
+                <li class="nav-item flex-sm-fill"><h4><a class="nav-link" href="#home">Home</a></h4></li>
+                <li class="nav-item flex-sm-fill"><h4><a class="nav-link" href="#about-me">About me</a></h4></li>
+                <li class="nav-item dropdown flex-sm-fill">
                   <a href="#portfolio" class="nav-link btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> 
                     Portfolio
                   </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#project1">Password Generator</a></li>
+                      <li><a class="dropdown-item" href="#project1">Country Travel Advisor</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#project2">Robo Friends</a></li>
-                      <li><a class="dropdown-item" href="#project3">Background Generator</a></li>
+                      <li><a class="dropdown-item" href="#project2">Code Quiz</a></li>
+                      <li><a class="dropdown-item" href="#project3">Weather Dashboard</a></li>
                     </ul>
                 </li>
-                <li class="nav-item"><h4><a class="nav-link" href="#contact-me">Contact Me</h4></a></li>
+                <li class="nav-item flex-sm-fill"><h4><a class="nav-link" href="#contact-me">Contact Me</h4></a></li>
               </ul>
             </div>
           </nav>
@@ -140,11 +89,129 @@
         <h1>Work</h1>
       </nav>
       <section class="projects">
-        <section class="main-project" id="project1">
+        <div class="card col-12 text-center" id="project1">
+          <!-- Main project image and mordal trigger -->
+          <div class="card-header">
+            <h5 class="card-title">Country travel advisor</h5>
+          </div>
+
+          <div class="card-body">
+            <img src="./assets/image/project-country-travel-advisor.jpg" class="card-img-top" alt="image of project country travel advisor" data-bs-toggle="modal" data-bs-target="#mainProjectModal">
+            <p class="card-text">The Country Travel Advisor is your digital travel guide and an essential tool for planning a successful holiday, honeymoon or weekend getaway! The Country Travel Advisor utilizes Public API's and cutting edge features to organize the relevant information required to successfully navigate through any country you desire. The Country Travel Advisor was designed with a minimalistic approach, to display only relevant information to avoid decision paralysis and streamline your holiday experience before you have even left the house.</p>
+
+            <div>
+              <a href="https://n1cholassmith.github.io/country-travel-advisor/" class="btn btn-primary">Deployed Website</a>
+              <a href="https://github.com/DevRayHE/country-travel-advisor" class="btn btn-primary">Github Repository</a>
+            </div>
+
+            <div class="card-footer">
+              <p class="card-text"><small class="text-muted">Javascript / CSS / HTML</small></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-group">
+          <div class="card col-s-12 col-m-6 text-center" id="project2">
+            <!-- Sub project 1 image and mordal trigger -->
+            <div class="card-header">
+              <h5 class="card-title">Code Quiz</h5>
+            </div>
+  
+            <div class="card-body">
+              <img src="./assets/image/code-quiz.jpg" class="card-img-top" alt="image of project country travel advisor" data-bs-toggle="modal" data-bs-target="#subProject1Modal">
+              <p class="card-text">This is a timed coding quiz with multiple-choice questions. This will run in the browser and feature dynamically updated HTML and CSS powered by Javascript code. It has a clean, polised and responsive user interface.</p>
+  
+              <div>
+                <a href="https://devrayhe.github.io/weather-dashboard/" class="btn btn-primary">Deployed Website</a>
+                <a href="https://github.com/DevRayHE/weather-dashboard" class="btn btn-primary">Github Repository</a>
+              </div>
+  
+              <div class="card-footer">
+                <p class="card-text"><small class="text-muted">Javascript / CSS / HTML</small></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card col-s-12 col-m-6 text-center" id="project2">
+            <!-- Sub project 1 image and mordal trigger -->
+            <div class="card-header">
+              <h5 class="card-title">Weather Dashboard</h5>
+            </div>
+  
+            <div class="card-body">
+              <img src="./assets/image/weather-dashboard.jpg" class="card-img-top" alt="image of project country travel advisor" data-bs-toggle="modal" data-bs-target="#subProject2Modal">
+              <p class="card-text">Weather Dashboard site that displays live realworld weather data with 5 days forecast.</p>
+  
+              <div>
+                <a href="https://devrayhe.github.io/code-quiz/" class="btn btn-primary">Deployed Website</a>
+                <a href="https://github.com/DevRayHE/code-quiz" class="btn btn-primary">Github Repository</a>
+              </div>
+  
+              <div class="card-footer">
+                <p class="card-text"><small class="text-muted">Javascript / CSS / HTML</small></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      <!-- Modal -->
+      <!-- Modal Main Project -->
+      <div class="modal fade" id="mainProjectModal" tabindex="-1" aria-labelledby="mainProjectModal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="mainProjectLabel">Country Travel Advisor Demo Video</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/image/full-screen-gif.gif">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Sub Project 1 -->
+      <div class="modal fade" id="subProject1Modal" tabindex="-1" aria-labelledby="subProject1Modal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="subProject1Label">Code Quiz Demo Video</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/image/code-quiz-example-gif.gif">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Sub Project 2 -->
+      <div class="modal fade" id="subProject2Modal" tabindex="-1" aria-labelledby="subProject2Modal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content ">
+            <div class="modal-header">
+              <h5 class="modal-title" id="subProject2Label">Weather Dashboard Demo Video</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <img src="assets/image/weather-dashboard.gif">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- <section class="main-project" id="project1">
           <a href="https://devrayhe.github.io/password-generator/" alt="hyperlink to password generator website"><img src=".\assets\image\password-generator.jpg" alt="image of password generator project website page"></a>
           <a class="project-description" href="https://devrayhe.github.io/password-generator/"><h4>Password Generator<br/><p>Javascript/CSS/HTML</p></h4></a>
-        </section>
-        <section class="sub-projects">
+        </section> -->
+        <!-- <section class="sub-projects">
           <div id="project2">
             <a href="https://devrayhe.github.io/horiseon_website_code_refactor/" alt="hyperlink to horiseon project website">
               <img src=".\assets\image\horiseon.jpg" alt="project horiseon website image">
@@ -185,7 +252,7 @@
               </h4>
             </a alt="hyperlink to international school of music ryde project website"> 
           </div>
-        </section>
+        </section> -->
       </section>
     </section>
 
