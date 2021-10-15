@@ -19,7 +19,7 @@
   <title>Ray's Portfolio</title>
 </head>
 
-<body class="linear-gradient-background-body"  data-bs-spy="scroll" data-bs-target="#top-nav-btns" data-bs-offset="0" tabindex="0">
+<body id="home" class="linear-gradient-background-body"  data-bs-spy="scroll" data-bs-target="#top-nav-btns" data-bs-offset="0" tabindex="0">
   <header id="top-nav-bar" class="linear-gradient-background-header sticky-top">
     <!-- <div class="top-nav-bar-wrapper">
       <section class="name-avatar">
@@ -30,26 +30,88 @@
       </section>
       <h2 class="subtitle">Welcome to my portfolio page!</h2>
     </div> -->
-    <nav id="top-nav-btns" class="navbar">
-      <div class="container">
-        <ul class="top-nav-links nav nav-pills">
-          <li class="nav-item"><h4><a class="nav-link" href="#about-me">About me</a></h4></li>
-          <li class="nav-item dropdown">
-            <a href="#portfolio" class="nav-link btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> 
-              Portfolio
-            </a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#project1">Password Generator</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#project2">Robo Friends</a></li>
-                <li><a class="dropdown-item" href="#project3">Background Generator</a></li>
+    <!-- <nav class="navbar navabar-expand-lg">
+      <div class="container-fliud">
+        <button class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarCollapseToggler" 
+              aria-controls="navbarCollapseToggler" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button> -->
+      <!-- <div class="collapse navbar-collapse" id="navbarCollapseToggler">
+        <nav id="top-nav-btns" class="navbar">
+          <div class="container">
+            <ul class="top-nav-links nav nav-pills">
+              <li class="nav-item"><h4><a class="nav-link" href="#about-me">About me</a></h4></li>
+              <li class="nav-item dropdown">
+                <a href="#portfolio" class="nav-link btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> 
+                  Portfolio
+                </a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#project1">Password Generator</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#project2">Robo Friends</a></li>
+                    <li><a class="dropdown-item" href="#project3">Background Generator</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item"><h4><a class="nav-link" href="#contact-me">Contact Me</h4></a></li>
+            </ul>
+          </div>
+        </nav>
+      </div> -->
+      <!-- </div>   
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapseToggler" aria-controls="navbarCollapseToggler" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div> -->
+        <div class="collapse navbar-collapse" id="navbarCollapseToggler">
+          <nav id="top-nav-btns" class="navbar">
+            <div class="container">
+              <ul class="top-nav-links nav nav-pills">
+                <li class="nav-item"><h4><a class="nav-link" href="#home">Home</a></h4></li>
+                <li class="nav-item"><h4><a class="nav-link" href="#about-me">About me</a></h4></li>
+                <li class="nav-item dropdown">
+                  <a href="#portfolio" class="nav-link btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> 
+                    Portfolio
+                  </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#project1">Password Generator</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#project2">Robo Friends</a></li>
+                      <li><a class="dropdown-item" href="#project3">Background Generator</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><h4><a class="nav-link" href="#contact-me">Contact Me</h4></a></li>
               </ul>
-          </li>
-          <!-- <li class="top-nav-btn"><h4><a href="#work">Work</a></h4></li> -->
-          <li class="nav-item"><h4><a class="nav-link" href="#contact-me">Contact Me</h4></a></li>
-        </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </nav>
+    
   </header>
 
   <main>
