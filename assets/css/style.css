@@ -16,7 +16,7 @@
 
 body {
   position: relative;
-  padding-top: 75px;
+  /* padding-top: 75px; */
   width: 100%;
   /* background-color: var(--spring-wood); */
 }
@@ -141,11 +141,11 @@ li,
   margin:1rem;
 }
 
-#top-nav-bar {
+/* #top-nav-bar {
   width:100%;
   justify-content: space-between;
   background-color: var(--dusk);
-}
+} */
 
 .nav-about-me h1,
 .nav-about-me pre,
@@ -277,6 +277,17 @@ article {
   margin: 0.2rem;
 }
 
+nav,
+.navbar {
+  padding:0;
+  margin:0;
+}
+
+/* set image to max 100% width of parent */
+img {
+  max-width: 100%;
+}
+
 .sub-projects img {
   width:100%;
   height:auto;
@@ -293,16 +304,14 @@ article {
 }
 
 /* When mouse over, image will turn to 100% visible and apply box shadow with 0.5s transition time */
-.main-project img:hover,
-.sub-projects img:hover {
+img:hover {
   opacity: 1;
   box-shadow: rgb(78, 77, 77) 5px 5px 5px;
   transition: all 0.5s ease-in-out;
 }
 
 /* On mouse click, "click effect" - image shrink to 95% with 0.5s transition time */
-.main-project img:active,
-.sub-projects img:active {
+img:active {
   width:99%;
   transition: all 0.8s ease-in-out;
 }
@@ -310,10 +319,10 @@ article {
 /* Mouse hover effect for top navigation button and bottom contact me links */
 .top-nav-btn a:hover,
 .contact-me-links a:hover,
-.project-description:hover {
-  font-size: 1.6rem;
+.project-description:hover,
+button:hover,
+a:hover {
   text-shadow: 0px 0px 8px #C6489A, 0 0 15px #C6489A;
-  transition: all 0.3s ease-in-out;
 }
 
 #contact-me {
@@ -352,9 +361,9 @@ article {
     flex-direction: column;
   }
 
-  #top-nav-bar {
+  /* #top-nav-bar {
     flex-direction: column;
-  }
+  } */
 
   #portfolio {
     flex-direction: column;
