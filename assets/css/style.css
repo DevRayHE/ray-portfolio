@@ -84,203 +84,16 @@ p {
   margin-bottom: calc(2*var(--default-margin));
 }
 
-.header-title {
-  padding: 0.6rem 1rem 0.5rem 4rem;
-  margin: 0.5rem 0.1rem 3% 0.5rem;  
-  border-radius: var(--default-border-radius);
-}
-
-/* Top right nav section and bottom contact me links section */
-.top-nav-links,
-.contact-me-links {
-  display:flex;
-  justify-content: space-evenly;
-  margin: 2.7rem 2rem 0 0;
-}
-
-/* Define list style for both top right nav section and bottom contact me links section */
-li {
-  list-style: none;
-  color:var(--cyan-opaque);
-}
-
-/* a {
-  font-family: var(--default-font-family);
-  color: var(--cyan-opaque);
-} */
-
-/* Apply default padding and margin to these elements */
-main,
-article,
-.nav-about-me,
-.nav-work,
-.nav-contact-me,
-.contact-me-section 
-{
-  padding: var(--default-padding);
-  margin: var(--default-margin);
-}
-
-/* Apply default margin to these elements */
-li,
-.main-project,
-.sub-projects { 
-  margin: var(--default-margin);
-}
-
-.top-nav-bar-wrapper {
-  display:flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-/* Left name & avater and right nav links will take 25%, subtitle in middle will take 50% of screen width */
-.name-avatar,
-.top-nav-links-wrapper {
-  flex: 1;
-}
-
-.subtitle {
-  flex: 2;
-  padding:1rem;
-  margin:1rem;
-}
-
-/* #top-nav-bar {
-  width:100%;
-  justify-content: space-between;
-  background-color: var(--dusk);
-} */
-
-.nav-about-me h1,
-.nav-about-me pre,
-.nav-contact-me h1,
-.nav-contact-me pre {
-  align-self: flex-end;
-}
-
-/* Defines the vertical section line */
-.nav-about-me,
-.nav-work,
-.nav-contact-me {
-  border-right: solid;
-  border-width: 5px;
-  border-color: var(--cyan-opaque);
-}
-
-.name-avatar {
-  display:flex;
-  flex-direction: row;
-}
-
-.avatar img {
-  object-fit: cover;
-  height:12vh;
-  margin-left:0.8rem;
-}
-
-/* Relative position to display subtitle on top of nav image */
-.top-nav-image {
-  position:relative;
-}
-
-  .top-nav-image img {
-    width: 100%;
-    height: 20vh;
-  }
-
-/* Turns main section to flexbox, column flex direction for "About me", "Work" and "Contact me" sections */
-main {
-  display:flex;
-  flex-direction: column;
-}
-
-/* Used id here for top right nav link.
-    Defines about me section to be a flexbox, row flex direction for nav bar and article section, will turns to column flex direction when display pixel width is smaller than 480px only. */
-#about-me {
-  display:flex;
-  flex-direction: row;
-}
-
-/* left nav bar vs article with flex portion of 2:5 */
-.nav-about-me {
-  flex:1;
-  display:flex;
-  flex-direction:column;
-}
-
-article {
-  flex:3;
-}
-
-#portfolio img {
-  border-radius: var(--default-border-radius);
-}
-
-.nav-work {
-  flex:1;
-  text-align: right;
-}
 
 section,
 footer {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
-
-#about-header,
-#project-header,
-#contact-header {
+  margin-top: 4rem;
   margin-bottom: 3rem;
 }
 
-.main-project {
-  display:flex;
-  margin:0.2rem;
-  position:relative;
-  /* transition: all 1s, ease-in-out; */
-}
-
-
-.main-project img {
-  width: 100%;
-  height: 100%;
-  /* Image covers 100% of container */
-  object-fit: cover;
-}
-
-/* Position the project description properly */
-.project-description {
-  position:absolute;
-  align-self:flex-end;
-  margin-bottom: 2rem;
-  padding:0.5rem 0.5rem 0rem 0.5rem;
-  line-height: 1.3;
-  width:auto;
-  max-height: 8.5vh;
-  border-radius: var(--default-border-radius);
-  background-color: var(--cyan-opaque);
-  color: var(--dusk);
-  opacity: 0.7;
-  transition: all 0.5s ease-in-out;
-}
-
-.project-description:hover{
-  opacity: 1;
-  transition: all 0.3s ease-in-out;
-}
-
-.sub-projects {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-      
-.sub-projects div {
-  display:flex;
-  /* Sub Projects image displays properly 2 in a row  */
-  flex:1 0 45%;
-  margin: 0.2rem;
+#about-header,
+#project-header {
+  margin-bottom: 3rem;
 }
 
 nav,
@@ -294,71 +107,87 @@ img {
   max-width: 100%;
 }
 
-.sub-projects img {
-  width:100%;
-  height:auto;
-  object-fit: cover;
-} 
-
-/* Gives all project image a border and 50% transparency */
-.main-project img,
-.sub-projects img {
-  border-style: solid;
-  border-width: auto;
-  border-color: var(--title-background-color);
-  opacity: 0.7;
-}
 
 /* When mouse over, image will turn to 100% visible and apply box shadow with 0.5s transition time */
-img:hover {
+/* img:hover {
   opacity: 1;
   box-shadow: rgb(78, 77, 77) 5px 5px 5px;
   transition: all 0.5s ease-in-out;
-}
+} */
 
 /* On mouse click, "click effect" - image shrink to 95% with 0.5s transition time */
-img:active {
+/* img:active {
   width:99%;
   transition: all 0.8s ease-in-out;
-}
+} */
 
 /* Mouse hover effect for top navigation button and bottom contact me links */
 .top-nav-btn a:hover,
 .contact-me-links a:hover,
-.project-description:hover,
-button:hover
-a:hover {
+button:hover,
+a:hover,
+#github:hover {
   text-shadow: 0px 0px 8px #94CCCD, 0 0 15px #94CCCD;
 }
 
-/* #top-nav-btns {
-  display:flex;
-  justify-content: flex-start;
-} */
+
+#github {
+  width: 2rem;
+}
+
+.contact-me-icons,
+.project-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contact-icon,
+.project-icon {
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 27px;
+  margin: 1rem;
+  cursor: pointer
+}
+
+.project-icon {
+  background-color: rgb(91, 91, 201);
+}
+
+.email {
+  background-color: #ce5a24;
+}
+
+.github {
+  background-color: rgb(153, 0, 153);
+}
+
+.linkedin {
+  background-color: #0077B5;
+}
+
+.contact-icon i,
+.project-icon i {
+  transition: 0.5s all;
+}
+
+.contact-icon:hover i,
+.project-icon:hover i {
+  transform: scale(1.5);
+}
+
+a {
+  text-decoration: none;
+}
 
 .btn {
   margin: 0.5rem;
-}
-
-#contact-me {
-  display:flex;
-  flex-direction: row;
-}
-
-/* Left nav bar vs contact me section with links is 1:3 */
-.nav-contact-me {
-  flex:1;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-me-section {
-  flex:3;
-}
-
-
-@media screen and (max-width: 1020px) {
-
 }
 
 /* Responsive layout style changes when screen size is below 780px */
@@ -372,45 +201,6 @@ a:hover {
     font-size: 1.2rem;
   }
 
-  .top-nav-bar-wrapper {
-    flex-direction: column;
-  }
-
-  /* #top-nav-bar {
-    flex-direction: column;
-  } */
-
-  #portfolio {
-    flex-direction: column;
-    align-self: center;
-  }
-
-  /* Work section header will change from left of section to top of section, bottom border as separation line */
-  .nav-work {
-    align-self: center;
-    border-right-style: none;
-    border-bottom: solid;
-    border-width: 5px;
-    border-bottom-color: var(--cyan-opaque);
-  }
-
-  .top-nav-links {
-    margin: auto;
-  }
-
-  .header-title {
-    padding: 1rem 1rem 1rem 3rem;
-    width: auto;
-  }
-
-  /* Adjust project description for tablet screen */
-  .project-description {
-    margin-bottom: 1.2rem;
-    padding-bottom: 0.1rem;
-    max-height:8.5vh;
-    line-height: 1.2;
-  }
-
 }
 
 /* Responsive layout style changes when screen size is below 480px */
@@ -420,84 +210,4 @@ a:hover {
     font-size: 1.3rem;
   }
 
-  .header-title {
-    width: auto;
-  }
-
-  /* Both about me and contact me main sections change to column style flexbox due to screen size */
-  #about-me,
-  #contact-me {
-    flex-direction: column;
-    align-self: center;
-  }
-
-  /* Both about me and contact me section header display in one line only */
-  .nav-about-me,
-  .nav-contact-me {
-    flex-direction: row;
-    align-self: center;
-    /* Disable right border, display bottom border as separation line */
-    border-right: none ;
-    border-bottom: solid;
-    border-width: 5px;
-    border-color: var(--cyan-opaque);
-  }
-
-  .subtitle {
-    font-size: 1.5rem;
-    max-height: 4rem;
-  }
-
-  /* Sub project image to display in column  */
-  .main-project,
-  .sub-projects,
-  .sub-projects div {
-    flex-direction: column;
-  }
-  
-  .sub-projects div {
-    justify-content: center;
-  }
-
-  /* Keeps sub projects image in a smaller size than main project */
-  .sub-projects img {
-    width:100%;
-    height: 15vh;
-  }
-
-  .main-project img {
-    height:20vh;
-  }
-
-  /* Flex order 1 to move project description on top of project image */
-  .project-description {
-    order:1;
-    position: relative;
-    margin-bottom: 0.2rem;
-    padding-bottom: 0.1rem;
-    max-height:7.5vh;
-    line-height: 1;
-  }
-
-
-  /* Removes margin for the bottom contact me links  */
-  .contact-me-links {
-    margin: 0;
-  }
 }
-
-/* Responsive layout style changes when screen size is below 780px */
-@media screen and (max-width: 315px) {
-  /* Keep the main project image larger in size than sub project image */
-  .main-project img {
-    width:100%;
-    height:auto;
-  }
-
-  .sub-projects img {
-    width:100%;
-    height: 10vh;
-  }
-}
-
-
