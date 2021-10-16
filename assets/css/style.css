@@ -21,6 +21,14 @@ body {
   /* background-color: var(--spring-wood); */
 }
 
+/* #about {
+  background-color: var(--cyan-opaque);
+}
+
+#portfolio {
+  background-color: var(--dusk);
+} */
+
 .linear-gradient-background-body {
   background-image: linear-gradient(
     #94CCCD 0%,
@@ -45,7 +53,6 @@ h4,
 h5,
 p {
   font-family: var(--default-font-family);
-  color: var(--dusk);
   display: inline-block;
   text-align: justify;
 }
@@ -56,7 +63,6 @@ h1 {
 
 h2 {
   font-size: 2.5rem;
-  color: var(--cyan-opaque);
 }
 
 h3 {
@@ -98,10 +104,10 @@ li {
   color:var(--cyan-opaque);
 }
 
-a {
+/* a {
   font-family: var(--default-font-family);
   color: var(--cyan-opaque);
-}
+} */
 
 /* Apply default padding and margin to these elements */
 main,
@@ -109,7 +115,6 @@ article,
 .nav-about-me,
 .nav-work,
 .nav-contact-me,
-.projects,
 .contact-me-section 
 {
   padding: var(--default-padding);
@@ -212,20 +217,21 @@ article {
   border-radius: var(--default-border-radius);
 }
 
-#portfolio {
-  display:flex;
-  flex-direction:row;
-}
-
 .nav-work {
   flex:1;
   text-align: right;
 }
 
-.projects {
-  flex:3;
-  display: flex;
-  flex-direction: column;
+section,
+footer {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+#about-header,
+#project-header,
+#contact-header {
+  margin-bottom: 3rem;
 }
 
 .main-project {
@@ -320,9 +326,18 @@ img:active {
 .top-nav-btn a:hover,
 .contact-me-links a:hover,
 .project-description:hover,
-button:hover,
+button:hover
 a:hover {
-  text-shadow: 0px 0px 8px #C6489A, 0 0 15px #C6489A;
+  text-shadow: 0px 0px 8px #94CCCD, 0 0 15px #94CCCD;
+}
+
+/* #top-nav-btns {
+  display:flex;
+  justify-content: flex-start;
+} */
+
+.btn {
+  margin: 0.5rem;
 }
 
 #contact-me {
@@ -464,9 +479,6 @@ a:hover {
     line-height: 1;
   }
 
-  a {
-    order:2;
-  }
 
   /* Removes margin for the bottom contact me links  */
   .contact-me-links {
@@ -487,3 +499,5 @@ a:hover {
     height: 10vh;
   }
 }
+
+
