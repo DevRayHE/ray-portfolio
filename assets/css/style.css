@@ -1,11 +1,9 @@
 /* Global variables */
 :root {
   --spring-wood: #F7F7ED;
-  --dusk:#465A75;
+  --dusk: #465A75;
   --cyan-opaque:#94CCCD;
-  --default-font-family: 'Manrope', sans-serif;
-  /* --default-font-family: -apple-system, BlinkMacSystemFont, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-  font-family: 'Manrope', sans-serif;
+  --default-font-family: 'Manrope', -apple-system, sans-serif;
   --default-padding: 0.5rem;
   --default-margin: 0.5rem;
   --default-border-radius: 10px;
@@ -19,23 +17,18 @@ html {
 
 body {
   position: relative;
-  /* padding-top: 75px; */
   width: 100%;
-  /* background-color: var(--spring-wood); */
 }
 
-/* #about {
-  background-color: var(--cyan-opaque);
+.hero img {
+  width:10rem;
 }
-
-#portfolio {
-  background-color: var(--dusk);
-} */
 
 .linear-gradient-background-body {
   background-image: linear-gradient(
-    #94CCCD 0%,
-    #F7F7ED 100%
+    #B6A39D 0%,
+    /* #94CCCD 100% */
+    #ffffff 100%
   );
   background-attachment: fixed;
 }
@@ -70,7 +63,7 @@ h2 {
 
 h3 {
   font-size: 1.8rem;
-  color: var(--cyan-opaque);
+  color: var(--dusk);
 }
 
 h4 {
@@ -95,13 +88,27 @@ div {
 
 section,
 footer {
-  margin-top: 4rem;
-  margin-bottom: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+
+#portfolio {
+  margin-top: 6rem;
+}
+
+.card-footer {
+  margin-bottom: 5rem;
+}
+
 
 #about-header,
 #project-header {
   margin-bottom: 3rem;
+}
+
+.card {
+  background-color: transparent !important;
+  border-style: none !important;
 }
 
 nav,
@@ -117,11 +124,11 @@ img {
 
 
 /* When mouse over, image will turn to 100% visible and apply box shadow with 0.5s transition time */
-/* img:hover {
+img:hover {
   opacity: 1;
   box-shadow: rgb(78, 77, 77) 5px 5px 5px;
   transition: all 0.5s ease-in-out;
-} */
+}
 
 /* On mouse click, "click effect" - image shrink to 95% with 0.5s transition time */
 /* img:active {
@@ -135,7 +142,7 @@ img {
 button:hover,
 a:hover,
 #github:hover {
-  text-shadow: 0px 0px 8px #94CCCD, 0 0 15px #94CCCD;
+  text-shadow: 0px 0px 8px #ffffff, 0 0 15px #ff6c6c;
 }
 
 
@@ -144,7 +151,19 @@ a:hover,
 }
 
 #contact {
-  margin-top: 10rem !important;
+  margin-top: 2rem !important;
+}
+
+/* #profile {
+  height: 100%;
+}
+
+#hero-div {
+  height:50vh;
+} */
+
+ol, ul {
+  padding-left: 0px !important;
 }
 
 .contact-me-icons,
@@ -152,7 +171,7 @@ a:hover,
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .contact-icon,

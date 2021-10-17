@@ -28,22 +28,13 @@
 
 <body id="home" class="linear-gradient-background-body"  data-bs-spy="scroll" data-bs-target="#top-nav-btns" data-bs-offset="0" tabindex="0">
   <header id="top-nav-bar" class="linear-gradient-background-header sticky-top p-0">
-    <!-- <div class="top-nav-bar-wrapper">
-      <section class="name-avatar">
-        <h1 class="header-title">Ray He</h1>
-        <figure class="avatar">
-          <img src=".\assets\image\avatar-bgremoved.png" alt="Ray's avatar image">
-        </figure>
-      </section>
-      <h2 class="subtitle">Welcome to my portfolio page!</h2>
-    </div> -->
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapseToggler" aria-controls="navbarCollapseToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-  
+
         <div class="collapse navbar-collapse" id="navbarCollapseToggler">
           <ul class="navbar-nav me-auto mb-2 mb-sm-0">
             <li class="nav-item">
@@ -71,23 +62,38 @@
 
   <main class="container">
     <!-- Top header section, consist of title name, avatar, Subtitle and page navigation links -->
-    <!-- Used id here for top right navigate button to activate UI scroll -->
-    <section id="about">
-      <header id="about-header" class="text-center">
-        <h2 class = "border-bottom border-secondary border-3 fw-bold">ABOUT</h2>
-      </header>
-      <article>
-        <p>
-          Hi, I'm Ray He. Authentically loving the act of programming. Genuine and dedicated Web developer with experience primarily in front end JavaScript, CSS, HTML.js, with interest in backend node.js and SQL. I'm passionate about all things code, learning new things. In a previous career I was a customer service and sales team leader. Through teamwork and dedication, continuously achieved 4 years of monthly, quarterly and yearly customer experience and sales targets.
-        </p>
-        <p>
-          With each project, my aim is to best engage my audience for an impactful user experience. I applied aspects of UX and agile development in a recent project. I worked on a team of four to develop a web app that helps users to plan their travel by fetching data and scenery about the destination. I’m excited to leverage my skills as part of a fast-paced, quality-driven team to build better experiences on the web. 
-        </p>
-        <p>
-          My strengths include problem-solving, project management, and agile adaptation to last-minute support changes, which makes me an integral member of any team. 
-        </p>
-      </article>
-    </section>
+    <div class="row">
+      <div id="hero-div" class="col-sm-12 col-md-3 text-center d-flex flex-column justify-content-center align-items-center">
+        <section id="profile" class="hero">
+          <img src="assets/image/profile-pic-resized.jpg" class="img-thumbnail rounded mx-auto d-blick" alt="Ray He profile picture">
+          <div class="hero-text">
+            <p><h1 class="fw-bold m-2">Ray HE</h1></p>
+            <br>
+            <p>Web Developer</p>
+          </div>
+        </section>
+      </div>
+      <div class="col-sm-12 col-md-9">
+        <section id="about">
+          <header id="about-header" class="text-center">
+            <h2 class = "border-bottom border-secondary border-3 fw-bold">ABOUT</h2>
+          </header>
+          <article>
+            <p>
+              Hi, I'm Ray He. <strong>Authentically loving the act of programming.</strong> Genuine and dedicated Web developer with experience primarily in front end JavaScript, CSS, HTML.js, with interest in backend node.js and SQL. I'm passionate about all things code, learning new things. In a previous career I was a customer service and sales team leader. Through teamwork and dedication, continuously achieved 4 years of monthly, quarterly and yearly customer experience and sales targets.
+            </p>
+            <p>
+              With each project, my aim is to best engage my audience for an impactful user experience. I applied aspects of UX and agile development in a recent project. I worked on a team of four to develop a web app that helps users to plan their travel by fetching data and scenery about the destination. I’m excited to leverage my skills as part of a fast-paced, quality-driven team to build better experiences on the web. 
+            </p>
+            <p>
+              My strengths include problem-solving, project management, and agile adaptation to last-minute support changes, which makes me an integral member of any team. 
+            </p>
+          </article>
+        </section>
+      </div>
+    </div>
+    
+    
 
     <!-- Middle work section, contains 1 main project and 4 sub projects, as well as project descriptions -->
     <section id="portfolio">
@@ -101,7 +107,7 @@
           <div class="card col-12 text-center p-2 m-2" id="project1">
             <!-- Main project image and mordal trigger -->
             <div class="card-header">
-              <button type="button" class="btn btn-light" class="card-title fw-bold" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="The Country Travel Advisor is your digital travel guide and an essential tool for planning a successful holiday, honeymoon or weekend getaway! The Country Travel Advisor utilizes Public API's and cutting edge features to organize the relevant information required to successfully navigate through any country you desire. The Country Travel Advisor was designed with a minimalistic approach, to display only relevant information to avoid decision paralysis and streamline your holiday experience before you have even left the house."><h3 class="card-title fw-bold">Country travel advisor</h3></button>
+              <button type="button" class="btn" class="card-title fw-bold" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="The Country Travel Advisor is your digital travel guide and an essential tool for planning a successful holiday, honeymoon or weekend getaway! The Country Travel Advisor utilizes Public API's and cutting edge features to organize the relevant information required to successfully navigate through any country you desire. The Country Travel Advisor was designed with a minimalistic approach, to display only relevant information to avoid decision paralysis and streamline your holiday experience before you have even left the house."><h3 class="card-title fw-bold">Country travel advisor</h3></button>
             </div>
   
             <div class="card-body">
@@ -141,7 +147,7 @@
             <div class="card col-12 col-lg-5 text-center p-2 m-2" id="project2">
               <!-- Sub project 1 image and mordal trigger -->
               <div class="card-header">
-                <button type="button" class="btn btn-light" class="card-title fw-bold" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="This is a timed coding quiz with multiple-choice questions. This will run in the browser and feature dynamically updated HTML and CSS powered by Javascript code. It has a clean, polised and responsive user interface."><h3 class="card-title fw-bold">Code Quiz</h3></button>
+                <button type="button" class="btn" class="card-title fw-bold" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="This is a timed coding quiz with multiple-choice questions. This will run in the browser and feature dynamically updated HTML and CSS powered by Javascript code. It has a clean, polised and responsive user interface."><h3 class="card-title fw-bold">Code Quiz</h3></button>
               </div>
     
               <div class="card-body">
@@ -174,9 +180,10 @@
             </div>
   
             <div class="card col-md-12 col-lg-5 text-center p-2 m-2" id="project3">
-              <!-- Sub project 1 image and mordal trigger -->
+
+              <!-- Sub project 2 image and mordal trigger -->
               <div class="card-header">
-                <button type="button" class="btn btn-light" class="card-title fw-bold" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="This is a timed coding quiz with multiple-choice questions. This will run in the browser and feature dynamically updated HTML and CSS powered by Javascript code. It has a clean, polised and responsive user interface."><h3 class="card-title fw-bold">Weather Dashboard</h3></button>
+                <button type="button" class="btn" class="card-title fw-bold" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Responsive Weather Dashboard site that displays live realworld weather data with 5 days forecast"><h3 class="card-title fw-bold">Weather Dashboard</h3></button>
               </div>
     
               <div class="card-body">
@@ -201,14 +208,13 @@
                     </a>
                   </li>
                 </ul>
+              </div>
 
               <div class="card-footer">
                 <p class="card-text"><small class="text-muted">Javascript / CSS / HTML</small></p>
               </div>
             </div>
-
           </div>
-          
         </div>
 
       <!-- Modal -->
@@ -270,7 +276,7 @@
 
     <!-- Bottom contact me section -->
     <!-- Link displayed as button with relevant image -->
-    <footer id="contact" class="mt-5">
+    <footer id="contact" class="mt-2">
       <header id="contact-header" class="text-center">
         <h2 class = "border-bottom border-secondary border-3 fw-bold">CONTACT</h2>
       </header>
