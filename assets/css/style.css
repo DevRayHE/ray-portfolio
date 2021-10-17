@@ -143,6 +143,10 @@ a:hover,
   width: 2rem;
 }
 
+#contact {
+  margin-top: 10rem !important;
+}
+
 .contact-me-icons,
 .project-icons {
   display: flex;
