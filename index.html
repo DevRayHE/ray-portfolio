@@ -31,6 +31,7 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
       <div class="container-fluid">
+        <!-- Collapse navigate button on small size screen -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapseToggler" aria-controls="navbarCollapseToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,6 +44,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="#about"><h5>ABOUT</h5></a>
             </li>
+            <!-- dropdown nav item -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false"><h5>PORTFOLIO</h5></a>
               <ul class="dropdown-menu" aria-labelledby="dropdown03">
@@ -60,9 +62,11 @@
 
   </header>
 
+
   <main class="container">
-    <!-- Top header section, consist of title name, avatar, Subtitle and page navigation links -->
+    <!-- Row with hero div and about div -->
     <div class="row">
+      <!-- hero div with profile picture, takes 3/12 col on medium and up screen, full container widht on small screen -->
       <div id="hero-div" class="col-sm-12 col-md-3 text-center d-flex flex-column justify-content-center align-items-center">
         <section id="profile" class="hero">
           <img src="assets/image/profile-pic-resized.jpg" class="img-thumbnail rounded mx-auto d-blick" alt="Ray He profile picture">
@@ -73,6 +77,7 @@
           </div>
         </section>
       </div>
+      <!-- about section, takes full container withd on small screen, 9/12 col on medium and up screen -->
       <div class="col-sm-12 col-md-9">
         <section id="about">
           <header id="about-header" class="text-center">
@@ -95,7 +100,7 @@
     
     
 
-    <!-- Middle work section, contains 1 main project and 4 sub projects, as well as project descriptions -->
+    <!-- Middle work section, contains 1 main project and 2 sub projects -->
     <section id="portfolio">
 
       <header id="project-header" class="text-center">
@@ -105,7 +110,7 @@
       <section class="projects">
         <div class="row" style="justify-content: space-evenly">
           <div class="card col-12 text-center p-2 m-2" id="project1">
-            <!-- Main project image and mordal trigger -->
+            <!-- Main project image and mordal trigger, project description as popover on project title mouse click event -->
             <div class="card-header">
               <button type="button" class="btn" class="card-title fw-bold" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="The Country Travel Advisor is your digital travel guide and an essential tool for planning a successful holiday, honeymoon or weekend getaway! The Country Travel Advisor utilizes Public API's and cutting edge features to organize the relevant information required to successfully navigate through any country you desire. The Country Travel Advisor was designed with a minimalistic approach, to display only relevant information to avoid decision paralysis and streamline your holiday experience before you have even left the house."><h3 class="card-title fw-bold">Country travel advisor</h3></button>
             </div>
@@ -145,7 +150,7 @@
         <div class="card-group">
           <div class="row" style="justify-content: space-evenly">
             <div class="card col-12 col-lg-5 text-center p-2 m-2" id="project2">
-              <!-- Sub project 1 image and mordal trigger -->
+              <!-- Sub project 1 Code Quiz image and mordal trigger, project description as popover on project title mouse click event -->
               <div class="card-header">
                 <button type="button" class="btn" class="card-title fw-bold" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="This is a timed coding quiz with multiple-choice questions. This will run in the browser and feature dynamically updated HTML and CSS powered by Javascript code. It has a clean, polised and responsive user interface."><h3 class="card-title fw-bold">Code Quiz</h3></button>
               </div>
@@ -181,7 +186,7 @@
   
             <div class="card col-md-12 col-lg-5 text-center p-2 m-2" id="project3">
 
-              <!-- Sub project 2 image and mordal trigger -->
+              <!-- Sub project 2 - Weather Dashboard image and mordal trigger, project description as popover on project title mouse click event -->
               <div class="card-header">
                 <button type="button" class="btn" class="card-title fw-bold" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Responsive Weather Dashboard site that displays live realworld weather data with 5 days forecast"><h3 class="card-title fw-bold">Weather Dashboard</h3></button>
               </div>
@@ -218,7 +223,7 @@
         </div>
 
       <!-- Modal -->
-      <!-- Modal Main Project -->
+      <!-- Modal Main Project Country Travel Advisor -->
       <div class="modal fade" id="mainProjectModal" tabindex="-1" aria-labelledby="mainProjectModal" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -235,7 +240,7 @@
           </div>
         </div>
       </div>
-      <!-- Modal Sub Project 1 -->
+      <!-- Modal Sub Project 1 Code Quiz-->
       <div class="modal fade" id="subProject1Modal" tabindex="-1" aria-labelledby="subProject1Modal" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -252,7 +257,7 @@
           </div>
         </div>
       </div>
-      <!-- Modal Sub Project 2 -->
+      <!-- Modal Sub Project 2 Weather Dashboard -->
       <div class="modal fade" id="subProject2Modal" tabindex="-1" aria-labelledby="subProject2Modal" aria-hidden="true">
         <div class="modal-dialog modal-lg">
           <div class="modal-content ">
