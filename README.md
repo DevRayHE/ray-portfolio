@@ -6,6 +6,13 @@
 
 <br/>
 
+- [Features](#features)
+- [Usage](#usage)
+- [Installation](#📝installation)
+- [Contribue](#contribute)
+- [Credits](#credits)
+- [License](#license)
+
 # 📖 Description
 ### This is my Web Developer portfolio website built with bootstrap framework, CSS and Javascript. There's a short intro about me, image gallery of the projects I have built recently, links to those projects, as well as different channels to stay in touch with me.
 
@@ -53,7 +60,8 @@
 ![Website on desktop, screen size below 480 pixel width](./assets/image/siteDemoVideoMobile.gif "Mobile version video")
 
 
-# 📝 Installation
+# 📝Installation 
+
 
 The link to the deployed site:
 
